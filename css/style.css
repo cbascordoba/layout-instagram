@@ -6,10 +6,18 @@ body {
 .post {
     cursor: pointer;
     position: relative;
-    width: 200px;
+   
     display: block;
 }
 
+.post-list{
+    display: grid;
+    grid-template-columns: repeat(3, minmax(100px, 293px) );
+    justify-content: center;
+    grid-gap: 28px;
+    grid-auto-flow: row;
+
+}
 .post-image {
     margin: 0;
 }
@@ -17,6 +25,8 @@ body {
 .post-image img {
     width: 100%;
     vertical-align: top;
+
+ 
 }
 
 .post-overlay {
@@ -45,4 +55,9 @@ body {
     text-align: center;
     display: inline-block;
 
+}
+@media screen and (max-width: 768px){
+    .post-list{
+        grid-gap: 3px;
+    }
 }
