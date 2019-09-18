@@ -25,7 +25,9 @@ body {
 .post-image img {
     width: 100%;
     vertical-align: top;
-
+    height: 293px;
+    object-fit: cover;
+    object-position: 0% 0%;
  
 }
 
